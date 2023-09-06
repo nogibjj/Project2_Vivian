@@ -1,4 +1,4 @@
-# README [![CI](https://github.com/vivianzzzzz/Template/actions/workflows/ci.yml/badge.svg)](https://github.com/vivianzzzzz/Template/actions/workflows/ci.yml)
+# README [![CI](https://github.com/vivianzzzzz/Project2/actions/workflows/ci.yml/badge.svg)](https://github.com/vivianzzzzz/Project2/actions/workflows/ci.yml)
 This repository features the materials for Mini-Project 1. It includes: 
 - A Makefile
 - A Dockerfile
