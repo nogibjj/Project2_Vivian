@@ -1,15 +1,28 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
+df=pd.read_csv("https://data.wa.gov/api/views/f6w7-q2d2/rows.csv")
 
-def f(s):
-    di={}
-    largest=0
-    left=0
-    for i in range(len(s)):
-        check = di[s[i]]+1 if s[i] in di else 0
-        left = max(left, check)
-        largest=max(largest,i-left+1)
-        di[s[i]]=i ## i + 1
-    return largest
+print(df.shape)
+print(df.shape[0])
+print(df.describe())
 
-if __name__ == "__main__":
-    print(f("ccabdec"))
+# Bottom 3 2020 Census Tract
+print(df.sort_values('2020 Census Tract', ascending = True)[:3])
+# [J] Calculate the median for the 2022 numbers
+np.median(df['2020 Census Tract'].dropna())
+
+# Plot a histogram for the 2022 numbers
+data = df['2020 Census Tract'].dropna()
+
+# Create histogram
+plt.hist(data, bins=5, edgecolor="k")
+
+# Add labels and title
+plt.xlabel('Census Tract')
+plt.ylabel('Frequency')
+plt.title('Histogram of 2020 Census Tract')
+
+# Show plot
+plt.show()
