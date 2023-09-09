@@ -8,16 +8,16 @@ def f():
     print(df.shape[0])
     print(df.describe())
 
-    # Bottom 3 2020 Census Tract
+    # Bottom 3 house price
     sorted_by_value=df.sort_values('median_house_value', ascending = True)[:3]
     # Calculate the median/mean/standard deviation for the 2022 numbers
     median=df['median_house_value'].dropna().median()
     mean=df['median_house_value'].dropna().mean()
     sd=df['median_house_value'].dropna().std()
-    print(sorted_by_value)
-    print(median)
-    print(mean)
-    print(sd)
+    print("Bottom 3 house price: "+str(sorted_by_value))
+    print("median is: "+ str(median))
+    print("mean is: "+str(mean))
+    print("standard deviation is: "+str(sd))
 
     # Plot a histogram for the house value
     data = df['median_house_value'].dropna()
@@ -33,5 +33,5 @@ def f():
     # Show plot
     plt.show()
 
-# if __name__ == "__main__":
-#     f()
+if __name__ == "__main__":
+     f()
