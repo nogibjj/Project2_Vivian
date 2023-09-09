@@ -32,3 +32,6 @@ def f():
 
     # Show plot
     plt.show()
+
+# if __name__ == "__main__":
+#     f()
