@@ -1,29 +1,34 @@
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
 def f():
-    df=pd.read_csv("https://data.wa.gov/api/views/f6w7-q2d2/rows.csv")
+    df=pd.read_csv("california_housing_train.csv")
 
     print(df.shape)
     print(df.shape[0])
     print(df.describe())
 
     # Bottom 3 2020 Census Tract
-    print(df.sort_values('2020 Census Tract', ascending = True)[:3])
-    # Calculate the median for the 2022 numbers
-    np.median(df['2020 Census Tract'].dropna())
+    sorted_by_value=df.sort_values('median_house_value', ascending = True)[:3]
+    # Calculate the median/mean/standard deviation for the 2022 numbers
+    median=df['median_house_value'].dropna().median()
+    mean=df['median_house_value'].dropna().mean()
+    sd=df['median_house_value'].dropna().std()
+    print(sorted_by_value)
+    print(median)
+    print(mean)
+    print(sd)
 
-    # Plot a histogram for the 2022 numbers
-    data = df['2020 Census Tract'].dropna()
+    # Plot a histogram for the house value
+    data = df['median_house_value'].dropna()
 
     # Create histogram
     plt.hist(data, bins=5, edgecolor="k")
 
     # Add labels and title
-    plt.xlabel('Census Tract')
+    plt.xlabel('median_house_value')
     plt.ylabel('Frequency')
-    plt.title('Histogram of 2020 Census Tract')
+    plt.title('Histogram of median house price')
 
     # Show plot
     plt.show()
