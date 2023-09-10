@@ -26,7 +26,7 @@ The purpose of the project is to use the template from the previous project to h
    
 
 
-##summary statistics
+## summary statistics
 1. describe dataset
 
 <img width="957" alt="Screen Shot 2023-09-10 at 4 32 27 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/06d52b1e-a3dc-40a1-93da-df117020dfc4">
@@ -39,7 +39,7 @@ The purpose of the project is to use the template from the previous project to h
 
 <img width="386" alt="Screen Shot 2023-09-10 at 4 32 58 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/40ac3bda-1895-478c-9852-ac37f8ce980d">
 
-##visualization
+## visualization
 1. Plot a histogram for the house value
 
 ![Figure_1](https://github.com/vivianzzzzz/Template/assets/143654445/2f7379f0-1342-4bee-bc6b-c4943bea475b)
