@@ -17,12 +17,12 @@ The purpose of the project is to use the template from the previous project to h
 1. make format
 2. make lint
 
-<img width="517" alt="Screen Shot 2023-09-10 at 5 07 55 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/8a359c49-89c8-4395-aad2-6aee8015285e">
+ <img width="835" alt="Screen Shot 2023-09-10 at 5 07 33 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/04797dc5-4aa1-40a3-9ca9-2eecb3344ce4">
+
 
 4. make test
 
- <img width="835" alt="Screen Shot 2023-09-10 at 5 07 33 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/04797dc5-4aa1-40a3-9ca9-2eecb3344ce4">
-
+<img width="517" alt="Screen Shot 2023-09-10 at 5 07 55 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/8a359c49-89c8-4395-aad2-6aee8015285e">
 
 
 ## summary statistics
