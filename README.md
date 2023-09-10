@@ -1,9 +1,45 @@
 # README [![CI](https://github.com/vivianzzzzz/Project2/actions/workflows/ci.yml/badge.svg)](https://github.com/vivianzzzzz/Project2/actions/workflows/ci.yml)
-This repository features the materials for Mini-Project 1. It includes: 
+This repository features the materials for Mini-Project 2. It includes: 
 - A Makefile
 - A Dockerfile
 - A foundational set of libraries for development operations and web applications
 - GitHub Actions
 
-It establishes a Codespaces environment and utilizes GitHub Actions to execute a Makefile with the following commands: install, test, format, lint. It is made to serve as a template for the following projects. 
 
+## Purpose Of Project
+The purpose of the project is to use the template from the previous project to help with anaylizing datasets using Pandas. I used the dataset "california housing price" and imported the csv file. In the first part, I use pandas to sort the data points by descending house price and calculated the mean, median, and standard deviation of the "median_house_price" colunm. In the second part, I used matlibplot to generate and displayed a histogram of "median_house_price". 
+
+## Preparation 
+1. open the project in codespaces
+2. container built and virtual environment to activated through requirements.txt
+
+## Check Format & Errors
+1. make format
+
+
+   
+2. make lint
+   
+
+   
+3. make test
+   
+
+
+##summary statistics
+1. describe dataset
+
+<img width="957" alt="Screen Shot 2023-09-10 at 4 32 27 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/06d52b1e-a3dc-40a1-93da-df117020dfc4">
+
+2. Bottom 3 house price
+
+<img width="992" alt="Screen Shot 2023-09-10 at 4 32 51 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/2d970c0f-5c5d-442c-add0-f7cb9c15bff2">
+
+3. Calculate the median/mean/standard deviation for the 2022 numbers
+
+<img width="386" alt="Screen Shot 2023-09-10 at 4 32 58 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/40ac3bda-1895-478c-9852-ac37f8ce980d">
+
+##visualization
+1. Plot a histogram for the house value
+
+![Figure_1](https://github.com/vivianzzzzz/Template/assets/143654445/2f7379f0-1342-4bee-bc6b-c4943bea475b)
